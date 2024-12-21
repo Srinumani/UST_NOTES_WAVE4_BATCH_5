@@ -1,0 +1,291 @@
+
+
+### Git Notes Module_1
+
+git is version control system | distributed version control system
+
+git --version   
+
+
+mkdir dirname   create directory 
+
+cd dirname
+
+echo "add first file">file.txt
+
+git init    Initialize a new Git repository in the current directory.
+
+
+### Git status:
+
+git status
+
+Defination:
+
+Show the working directory status, including staged, unstaged, and untracked files.
+
+output:
+
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+### git add 
+
+git add <file>
+Stage a file for the next commit.
+
+git add .
+Stage all changes in the current directory.
+
+
+EX:
+git add file.txt
+
+git status
+
+output:
+
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file.txt
+
+
+### git commit -m "message"
+
+Save staged changes with a descriptive commit message.
+
+Ex:
+git commit -m "Add file.txt"
+
+git status
+
+output:
+
+On branch main
+nothing to commit, working tree clean
+
+
+### git log
+
+Show the commit history of the repository
+
+Ex:
+
+git log
+
+output:
+
+commit a1b2c3d4e5f67890123456789abcdef01234567 (HEAD -> main)
+Author: Your Name <your.email@example.com>
+Date:   Wed Dec 20 14:25:00 2024 +0000
+
+    Add feature X
+
+commit 9f8e7d6c5b4a3f2109876543210fedcba987654
+Author: Your Name <your.email@example.com>
+Date:   Tue Dec 19 10:10:00 2024 +0000
+
+    Fix bug in feature Y
+
+commit 1234567890abcdef1234567890abcdef12345678
+Author: Your Name <your.email@example.com>
+Date:   Mon Dec 18 09:00:00 2024 +0000
+
+    Initial commit
+
+
+###git show <commit_hash>
+
+ Displays detailed information about a specific commit, including its changes (diff), metadata, and message.
+
+
+Ex:
+
+git show a1b2c3d4e5f67890123456789abcdef01234567
+
+output:
+
+commit a1b2c3d4e5f67890123456789abcdef01234567 (HEAD -> main)
+Author: Your Name <your.email@example.com>
+Date:   Wed Dec 20 14:25:00 2024 +0000
+
+    Add feature X
+
+diff --git a/file.txt b/file.txt
+index 123abcd..456def0 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1,2 +1,2 @@
+-Hello, World!
++Hello, Git World!
+
+
+### Branching
+
+git branch
+List all branches in the repository.
+
+git branch <branch_name>
+Create a new branch.
+
+git checkout <branch_name>
+Switch to an existing branch.
+
+git checkout -b <branch_name>
+Create and switch to a new branch.
+
+git merge <branch_name>
+Merge changes from the specified branch into the current branch.
+
+git branch -d <branch_name>
+Delete a branch that has been merged.
+
+git branch -D <branch_name>
+Force delete a branch, even if it hasn't been merged.
+
+
+### Remote Repositories
+
+git remote -v
+Show the remote repository URLs.
+
+git remote add origin <repo_url>
+Add a new remote repository.
+
+git push origin <branch_name>
+Push local changes to the remote repository for the specified branch.
+
+git pull origin <branch_name>
+Fetch and merge changes from the remote repository.
+
+git fetch
+Fetch updates from the remote without merging them.
+
+
+
+###Tags
+
+git tag <tag_name>
+Create a new lightweight tag.
+
+git tag -a <tag_name> -m "message"
+Create an annotated tag with a message.
+
+git push origin <tag_name>
+Push a tag to the remote repository.
+
+git push origin :refs/tags/<tag_name>
+Delete a tag from the remote repository.
+
+git tag -d <tag_name>
+Delete a tag locally.
+
+
+git push origin --delete v1.0
+Delete the tag from the remote:
+
+
+### stashing
+
+git stash
+Save uncommitted changes temporarily.
+
+git stash list
+View all stashed changes.
+
+git stash apply
+Apply the latest stashed changes.
+
+git stash pop
+acess the recent stash 
+
+git stash drop
+Remove the latest stash after applying it.
+
+git stash clear
+Remove all stashed changes.
+
+
+###Undo Changes
+
+git reset <file>
+Unstage a file but keep its changes in the working directory.
+
+git reset --soft HEAD~1
+Undo the last commit but keep changes staged.
+
+git reset --hard HEAD~1
+Undo the last commit and discard all changes.
+
+git checkout <file>
+Discard changes in the working directory for a specific file.
+
+git revert <commit_hash>
+Create a new commit that undoes the changes of a specific commit.
+
+
+###Collaboration
+git diff
+Show changes between commits, branches, or the working directory.
+
+git diff --staged
+Show changes between the index (staged area) and the last commit.
+
+git push
+Push committed changes to the remote repository.
+
+git pull
+Fetch and merge changes from the remote repository.
+
+git rebase <branch_name>
+Reapply commits on top of another branch’s base.
+
+git log --oneline
+Display the commit history in a compact, one-line format.
+
+git log --graph --all
+Display the commit history as a graph of all branches.
+
+
+### Advanced Commands
+
+
+git cherry-pick <commit_hash>
+Apply changes from a specific commit to the current branch.
+
+git blame <file>
+Show who modified each line of a file and when.
+
+git archive
+Create a tarball or zip archive of the repository.
+
+git clean -f
+Remove untracked files from the working directory.
+
+git config --global user.name "Your Name"
+Set your global Git username.
+
+git config --global user.email "you@example.com"
+Set your global Git email address.
+
+git log --oneline
+Display the commit history in a compact, one-line format.
+
+git log --graph --all
+Display the commit history as a graph of all branches.
+
+git bisect
+Find the commit that introduced a bug using binary search.
+
+git submodule add <repo_url>
+Add a submodule to your repository.
+
