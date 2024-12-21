@@ -1,0 +1,175 @@
+SDLC
+
+what is SDLC?
+ 
+---sdlc stands for software development life cycle it contains seven phases
+
+	1.Requirements gathering: Gathering the needs and expectations of stakeholders for the software projects
+	2.Analysis:       evaluate the gathering requirements and define clear development plan
+	3.Design  :      create a blueprint for the software,detailing architecture,components and interfaces
+	4.Implementation: develop the code based on the design
+	5.Testing: fix the issues or error any occur in code
+	6.Deployment: delivering the product to the clients using some service like cloud or aws
+	7.Maintenance: Continuously update and improve the software to fix issues and add new features.
+
+
+SRS stands for Software Requirements Specification.
+
+
+RUP (Rational Unified Process)phases
+
+Inception: requirements gathering and planning
+Elaboration:  analysis and design
+Construction: coding/implementation
+Transition: Deploy the system to the end-users.
+
+
+product vs service
+
+product is bought 
+
+service is subscribed  example: Samsung is product ,  you can pay only once
+				airtel delivers service        you can pay monthly
+
+
+
+key software development roles
+--------------------------------------
+Product manager  
+Product owner
+Engineering manager  
+Software architect  
+Software developers 
+UX/UI designers 
+QA engineer 
+Business analyst  
+Scrum master 
+Testers 
+Team lead or Technical lead
+
+
+https://alcor-bpo.com/10-key-roles-in-a-software-development-team-who-is-responsible-for-what/
+
+
+
+What is the difference between QA and QC?
+	Quality Assurance
+
+		methods, that we follow that ensures(protect) the quality of the product being developed
+
+	Quality Control
+
+		to find bugs, defects
+		quality of the product
+		quality of the process to develop the product
+		quality of the quality process itself
+
+
+Scrum Master
+	sprint planning, 
+	determining durations, and 
+	outlining tasks for each cycle. 
+
+
+
+
+Front-end
+	HTML5
+	CSS3
+	Bootstrap
+	Tailwind
+	Javascript ES6
+	JQuery
+	Typescript
+	Angular
+	ReactJs
+
+Back-end
+	Java SE
+	Java EE
+	Spring
+	Spring boot
+	Microservices
+	Restful webservices/ REST apis
+	MySql/ Oracle/ MS SQL Server/ H2/ PostgrSQL/ 
+	MongoDb
+	DJango
+	
+
+Postman
+Swagger
+SonarQube
+Docker
+Kubernetes
+AWS
+Jira
+Jenkins
+Git
+Maven
+CI/CD
+
+
+
+Software development life cycle (SDLC) models
+   
+>>>> Waterfall Model:
+
+Linear and sequential: Each phase must be completed before moving to the next.
+Phases: Requirements gathering, design, implementation, testing, deployment, and maintenance.
+Pros: Simple and easy to understand, good for projects with well-defined requirements.
+Cons: Rigid, inflexible, difficult to accommodate changes.
+
+>>>>> Agile Model:
+
+Iterative and incremental: Development is divided into short iterations (sprints) with frequent feedback and adjustments.
+Key principles: Collaboration, flexibility, customer satisfaction.
+Methods: Scrum, Kanban, Extreme Programming (XP).
+Pros: Adaptable to change, customer involvement, faster time-to-market.
+Cons: Requires high team collaboration, may not be suitable for all projects.
+
+>>>> Iterative Model:
+
+Repetitive cycles of development and testing.
+phases:Requirements, Design, Implementation, Testing, Evaluation.
+Focuses on early prototypes and continuous improvement.
+Pros: Allows for early feedback and risk mitigation.
+Cons: Can be time-consuming and may lead to scope creep.
+
+>>>> Spiral Model:
+
+Combines iterative development with risk management.
+phases:Planning, Risk Analysis, Development, Evaluation.
+Involves risk analysis and prototyping at each stage.
+Pros: Good for complex projects with high risk.
+Cons: Can be expensive and time-consuming.
+
+>>>> V-Shaped Model:
+
+Verification and validation are emphasized at each stage.
+phases:Requirements, Design, Coding, Unit Testing, Integration Testing, System Testing, Acceptance Testing
+Testing activities are planned in parallel with the corresponding development phase.
+Pros: Emphasizes quality assurance throughout the development process.
+Cons: Less flexible than iterative models.
+
+
+
+Software Testing Types (STLC)
+
+Software testing is a crucial part of the SDLC, ensuring(protect) the quality and reliability of the software. Here are some common types of testing:
+
+Unit Testing: Testing individual components or modules of the software.
+Integration Testing: Testing the interaction between different components or modules.
+System Testing: Testing the entire system as a whole to ensure it meets the specified requirements.
+User Acceptance Testing (UAT): Testing the software by end-users to ensure it meets their needs and expectations.
+Performance Testing: Evaluating the system's performance under different workloads.
+Security Testing: Identifying and mitigating security vulnerabilities.
+Usability Testing: Evaluating the ease of use and user experience.
+
+
+
+
+
+
+
+
+
