@@ -1,0 +1,37 @@
+
+
+linux is useful for many situations 
+
+for example git bash is a linux enviornment you can practise linux commands in the git bash itself
+
+linux basic commands
+--------------------
+
+ls -show all files in linux
+
+ls -l longlist show all files with some data
+
+pwd -present working directory
+
+cd -change directory
+
+cd .. one step back or got parent directory
+
+mkdir -make directory
+
+cd main -change directory to main 
+
+rmdir -remove directory
+
+rm- remove files only
+
+touch -create a file
+
+echo -create a file
+      ex:echo "mani files">first.txt
+
+cat -cat is used to read the echo files or read the content
+
+nano - is used to  create a more content not a single line
+
+
