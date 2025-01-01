@@ -7,6 +7,16 @@ git is version control system | distributed version control system
 git --version   
 
 
+git --help
+
+   git help -a' and 'git help -g' list available subcommands and some
+    concept guides.
+
+    after enter git help -a' press q come outside the page
+
+it shows some git commands 
+
+
 mkdir dirname   create directory 
 
 cd dirname
