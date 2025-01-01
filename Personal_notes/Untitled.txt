@@ -225,6 +225,8 @@ git stash clear
 Remove all stashed changes.
 
 
+
+
 ###Undo Changes
 
 git reset <file>
@@ -246,6 +248,11 @@ Create a new commit that undoes the changes of a specific commit.
 ###Collaboration
 git diff
 Show changes between commits, branches, or the working directory.
+
+git diff new-feature..main check the differnece between  two branches
+
+git log new-feature..main   this is another way
+
 
 git diff --staged
 Show changes between the index (staged area) and the last commit.
@@ -299,3 +306,25 @@ Find the commit that introduced a bug using binary search.
 git submodule add <repo_url>
 Add a submodule to your repository.
 
+
+#### ---------Alias
+
+Adding alias
+
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+
+
+git ci "message"
+
+
+Removing alias
+
+git config --global --unset alias.cm
+
+
+Changing the last commit message
+
+ git commit --amend -m "New commit message"
