@@ -328,3 +328,35 @@ git config --global --unset alias.cm
 Changing the last commit message
 
  git commit --amend -m "New commit message"
+
+ Tracing changes in a file
+ look at the last modifications made to a particular file
+ git blame <filename>
+ ex:git blame README.md
+
+ git show command is used to modifications made in particular commit
+
+ git show <hash-commit>
+
+Cherry picking
+
+The cherry picking activity consists of choosing existing commits from somewhere
+else and applying them here.
+
+Suppose you and your colleague Mark are working on two different public branches
+of the same repository; Mark found and fixed an annoying bug in the feat1 branch
+that affects even your feat2 branch. You need that fix, but you can't (or don't want to)
+merge his branch, so how can you benefit from his fix?
+
+git checkout feat2
+$ git cherry-pick a1b2c3
+
+git cherry-pick a1b2c3 -e change commit message
+
+git cherry-pick a1b2c3 -n changes made in only staging area
+
+We can even pick commit sets if we want to by using the <starting-
+commit>..<ending-commit> syntax:
+$ git cherry-pick feat1~2..feat1~0
+With this syntax, you are basically picking the last two commits from the
+feat1 branch
